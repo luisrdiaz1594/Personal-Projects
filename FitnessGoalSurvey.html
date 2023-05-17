@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<! Language Of The HTML Document-->
+
+<html lang ="en">
+
+  <!The Head Element Of This Form-->
+
+  <head>
+    <meta charset = "UTF-8">
+
+<!The Title Element Of Survey Form! -->
+    <title>Fitness Form</title>
+
+   <!The Link To The styles.css Code For This Program--> 
+
+    <link rel="stylesheet" href="SurveryStyles.css"/>
+  </head>
+
+<!The Body Element Of This Survey Form!-->
+
+  <body>
+
+<!The Main Element Within The Body Element!-->
+    <main>
+  <! Header At the Top Of This Form-->
+    <h1 id="title">Fitness Goal Form</h1>
+
+    <! p Element for Thanking The User Of This Survey Form-->
+
+    <p id= "description"><em>Thanks For Sharing Your Fitness Goals!</em></p>
+
+    <! Posting To The Link For Where This Survey Form Will Be Accessed--> 
+
+    <form method= "post" action= "https://survey-form.freecodecamp.rocks" id= "survey-form">
+
+    <!The Fieldset Element Where All The Questions Will Be Asked!-->
+
+      <fieldset>
+
+      <! The Label Element That Will Take The User's Name-->
+        <label for="name" id= "name-label">Name<input id= "name"  type= "text" placeholder= "Enter Name" required/>
+        </label>
+
+      <! The Label Element That Will Take The User's Email-->
+
+        <label for="email" id="email-label">Email<input id ="email" type="email" placeholder="Enter Email" required/>
+        </label>
+
+      <! The Label Element That Will Take The User's Age Between A Range Of 13 and 100-->
+
+        <label for="number" id="number-label">Age(optional)<input id ="number" type="number" placeholder="Enter Age" min ="13" max="100"/>
+        </label>
+
+      <! The Label Element That Holds The First Question With An Inquiry Of Which The Options Are Under A Dropdown -->
+
+        <label for ="dropdown">What workouts you want to see yourself excel in?
+
+      <! The Select Element That Holds The Options For The First Question And Their Values-->
+
+          <select id="dropdown">
+            <option value="">Select workout</option>
+            <option value="1">Calisthenics</option>
+            <option value="2">Bodybuilding</option>
+            <option value="3">Powerlifing</option>
+            <option value="4">Cardio</option>
+            <option value="5">Not Really Sure</option>
+          </select>
+
+Do you want to lose weight, shred fat, have more energy, or build muscle?
+
+<! The Label Element For The Second Question Which Holds The Input Options Within Radio Buttons-->
+
+  <label   for="definitely">
+
+    <!First & Second Input Element For The 'Definitely Yes' and 'Definitely No' Option--> 
+
+    <input id="definitely" type="radio" name="definitely-label" value="1" class="inline"/>Build Muscle
+
+
+  <input id="definitely" type="radio" name="definitely-label" value="1" class="inline"/>Lose Weight
+  
+  </label>
+
+    <! Label Element For The Third & Fourth Input Elements 'Maybe Yes' & 'Maybe Not' Incased In Radio Buttons-->
+
+        <label for="maybe"><input id="maybe" type="radio" name="maybe-label" value="2" class="inline"/>Shred Fat
+        
+        <input id="maybe" type="radio" name="maybe-label" value="2" class="inline"/>Have More Energy
+        </label>
+
+    <!Label Element For The Fifth And Sixth Input Elements 'Not sure' & 'I am sure' Incased In Radio Buttons-->
+        <label for="not sure"><input id="not sure" type="radio" name="not sure-label" value="3" class="inline"/>Prefer Not To Say
+        
+        <input id="not sure" type="radio" name="not sure-label" value="3" class="inline"/>Other
+        </label>
+
+    <! The Label Element For The Third Question Which Holds The Options Within A Dropdown-->
+
+        <label for ="feature">Who or what motivated you to start working on your fitness goals?
+
+      <! The Select Element That Holds Every Option To Answer The Third Question-->
+
+          <select id="dropdown" name="feature">
+            <option value="">Select your motivator</option>
+            <option value="1">Relative</option>
+            <option value="2">Doctor</option>
+            <option value="3">Health Issues</option>
+            <option value="4">Mental Health</option>
+          </select>
+        </label>
+
+        
+
+        <!The Label Elements For The Fourth Question On This Survery Form  Keep All Options Inline (Class Selector From CSS File) Within Checkboxes-->
+
+        Which workouts sound cool to you? (Check all that apply)
+
+        <! First Label With Inline Checkbox Option 'Front-end Projects'-->
+
+        <label for="improved"> <input id="improved" type="checkbox" name="improved" value="1" class="inline"/>Squats</label>
+
+        <! Second Label With Inline Checkbox Option 'Back-end Projects'-->
+
+          <label for="improved"> <input id ="improved" type="checkbox" name="improved" value="2" class="inline"/>Deadlifting</label>
+
+        <! Third Label With Inline Checkbox Option 'Data Visualization'-->
+
+          <label for="improved"> <input id ="improved" type="checkbox" name="improved" value="3" class="inline"/>Push-ups/Pull-ups</label>
+
+          <! Fourth Label With Inline Checkbox Option 'Challenges'-->
+
+          <label for="improved"> <input id ="improved" type="checkbox" name="improved" value="4" class="inline"/>Bicep Curls</label>
+
+          <! Fifth Label With Inline Checkbox Option 'Open Source Community'-->
+
+          <label for="improved"> <input id ="improved" type="checkbox" name="improved" value="5" class="inline"/>Shoulder Presses</label>
+
+<! Sixth Label With Inline Checkbox Option 'Gitter help rooms'-->
+
+          <label for="improved"> <input id ="improved" type="checkbox" name="improved" value="6" class="inline"/>Lateral Pulldowns</label>
+
+          <! Seventh Label With Inline Checkbox Option 'Videos'-->
+
+          <label for="improved"> <input id ="improved" type="checkbox" name="improved" value="7" class="inline"/>Tricep Extensions</label>
+
+          <! Eigth Label With Inline Checkbox Option 'City Meetups'-->
+
+          <label for="improved"> <input id ="improved" type="checkbox" name="improved" value="8" class="inline"/>Bench/Chest Press</label>
+
+          <! Ninth Label With Inline Checkbox Option 'Wiki'-->
+
+          <label for ="improved"> <input id ="improved" type="checkbox" name="improved" value="9" class="inline"/>Jump Rope</label>
+
+          <! Tenth Label With Inline Checkbox Option 'Forum'-->
+
+          <label for ="improved"> <input id ="improved" type="checkbox" name="improved" value="10" class="inline"/>Jogging</label>
+
+          <! Eleventh Label With Inline Checkbox Option 'Additional Courses'-->
+
+          <label for ="improved"> <input id ="improved" type="checkbox" name="improved" value="11" class="inline"/>Lunges</label>
+
+          <! This label holds a text area where the user can enter comments. The placholder says "Enter Comments Here..."-->
+
+        <label for="comments">
+          <textarea id="comments" name="comments" rows="7" col="30" placeholder="Comments...""></textarea>
+        
+        </fieldset>
+
+        <!This is the end of the fieldset that contains the Survery Form--> 
+
+        <! Below is the submit button that will submit the form to the source of the survery form--> 
+
+        <input type="submit" id="submit" value="Submit"/>  
+
+    </form>
+  </body>
+</html>
+    

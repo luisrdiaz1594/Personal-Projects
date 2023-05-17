@@ -1,0 +1,83 @@
+/*This selector provides the width, height, font and background color of the Survery Form*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #fac237;
+    color: #110c00;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  /*This selector centers the header and the message below the header of the survey form*/ 
+  
+  h1, p{
+    margin: 1em auto;
+    text-align: center;
+  
+  }
+  
+  /*This selector formats the width of the entities withing the form.*/
+  
+  form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  /*This selector removes the border surrounding the fieldset and increases the size of the font by two times*/
+  
+  fieldset{
+    border: none;
+    padding: 2em 0;
+  }
+  
+  /*This selector sets each label display in a block container with a margin gap of 0.5 beneath each label
+  */
+  
+  label{
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  /*Sets the input, textarea, and select elements with a margin of 10px at the top and right, left, and bottom at 0. The width is also set at 100%. */
+  
+  input,textarea,select{
+    margin: 10px 0 0 0;
+    width: 100%;
+    background-color: #e5f3f2;
+  }
+  
+  /* Sets any part of the survery from where you need to add in text from your keyboard to specified colors*/
+  
+  input,textarea{
+    background-color: #e5f3f2;
+    border: 1px solid #336699;
+    color: #110c00;
+  
+  }
+  
+  /*Sets the radio buttons and checkboxes inline with a margin of 0.5 to the right of the buttons and aligning them in the middle position next to the text.*/
+  
+  .inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align:middle;
+  
+  }
+  
+  /*Sets the submit button into a block container with a width of 100%, margin of 1em auto, height of 3em, font size of 1.1em and specified background color and border color and sets the width of the button*/
+  
+  input[type="submit"]{
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    height: 3em;
+    font-size: 1.1em;
+    background-color:#110c00;
+    border-color: #ffffff;
+    min-width: 300px;
+  }
